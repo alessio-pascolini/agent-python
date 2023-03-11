@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "htpclient"
+version = "0.7.0"
+authors = [
+  {name = "Sein Coray", email = "sein@coray.org"}
+]
+description = "Official python agent for using the distributed hashcracker Hashtopolis"
+readme = "README.md"
+requires-python = ">=3.5"
+license = {file = "LICENSE.txt"}
+keywords= [
+  "hashtopolis",
+  "agent"
+]
+dependencies = [
+  "requests",
+  "psutil",
+  'importlib-metadata; python_version>"3.5"',
+]
+[project.scripts]
+htpclient = "htpclient.__main__:main"
+[project.urls]
+homepage = "https://github.com/hashtopolis/agent-python"
