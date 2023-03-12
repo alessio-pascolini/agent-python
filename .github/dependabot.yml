@@ -8,11 +8,20 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/docker/cuda"
     schedule:
       interval: "weekly"
     commit-message:
       # Prefix all commit messages with "[docker] "
       # (no colon, but a trailing whitespace)
       prefix: "[docker] "
+
+  # - package-ecosystem: "docker"
+  # directory: "/docker/intel"
+  # schedule:
+  #   interval: "weekly"
+  # commit-message:
+  #   # Prefix all commit messages with "[docker] "
+  #   # (no colon, but a trailing whitespace)
+  #   prefix: "[docker] "
 ...
