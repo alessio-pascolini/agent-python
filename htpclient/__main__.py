@@ -1,6 +1,5 @@
 import glob
 import shutil
-import signal
 import sys
 import os
 import time
