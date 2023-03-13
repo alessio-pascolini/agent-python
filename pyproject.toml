@@ -20,7 +20,18 @@ dependencies = [
   "psutil",
   'importlib-metadata; python_version>"3.5"',
 ]
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "confidence",
+    "tuspy",
+    "py7zr",
+]
 [project.scripts]
 htpclient = "htpclient.__main__:main"
 [project.urls]
 homepage = "https://github.com/hashtopolis/agent-python"
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
